@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark p-5">
+  <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">𝓙𝓪𝔂 𝓐𝓵𝓿𝓲𝓷 𝓒𝓸</a>
+    <div class="collapse navbar-collapse" id="navmenu" onClick="collapser()">
+      <ul class="nav navbar-nav ms-auto fs-4" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" href="#">Profile</a>
+        </li>
+        <li class="nav-item" onClick="playVideos()">
+          <a class="nav-link" id="pills-photography-tab" data-bs-toggle="pill" data-bs-target="#pills-photography" type="button" role="tab" aria-controls="pills-photography" aria-selected="false" href="#">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-more-tab" data-bs-toggle="pill" data-bs-target="#pills-more" type="button" role="tab" aria-controls="pills-more" aria-selected="false" href="#">More</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-lg mb-5 p-0 ">
+  <div class="row bg-white g-0">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <app-home></app-home>
+      </div>
+      <div class="tab-pane fade py-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <app-profile></app-profile>
+      </div>
+      <div class="tab-pane fade" id="pills-photography" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <app-photography></app-photography>
+      </div>
+      <div class="tab-pane fade" id="pills-more" role="tabpanel" aria-labelledby="pills-more-tab">
+        <app-more></app-more>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer mt-auto py-3 mt-5 position-relative bottom-0 col-12">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <span class="fs-6 d-block  text-white ">JCO © 2021</span>
+        <span class="d-inline-block my-2">
+          <a target="_blank" href="https://www.instagram.com/veenoic/?hl=en"><i class="mx-1 text-white bi bi-instagram"></i></a>
+          <a target="_blank" href="https://www.facebook.com/jayalvin.co"><i class="mx-1 text-white bi bi-facebook"></i></a>
+        </span>
+        <sub class="d-block  text-white ">Content created using html/css/js/Angular.</sub>
+        <span class="d-block" style="color:#ccc"><em><sub class="">And imagination.</sub></em></span>
+      </div>
+    </div>
+  </div>
+</footer>

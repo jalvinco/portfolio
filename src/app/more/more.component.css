@@ -1,0 +1,37 @@
+.top-img {
+  background-image: url('~/src/assets/img/more.jpg');
+}
+
+#moreimg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: url('~/src/assets/img/moreimg.jpg');
+  min-height: 480px;
+}
+
+#lego {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: url('~/src/assets/img/lego.jpg');
+  min-height: 320px;
+}
+
+#moreend1, #moreend2 {
+  min-height: 620px;
+}
+
+#moreend1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: url('~/src/assets/img/moreend1.jpg');
+}
+
+#moreend2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: url('~/src/assets/img/moreend3.jpg');
+}
