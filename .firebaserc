@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jalvin": {
+      "hosting": {
+        "portfolio": [
+          "jalvin"
+        ]
+      }
+    }
+  }
+}

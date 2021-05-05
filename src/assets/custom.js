@@ -3,6 +3,9 @@ function openTab(tab) {
   var tab = new bootstrap.Tab(someTabTriggerEl)
   backToTop();
   tab.show();
+  if (tab == '#pills-photography-tab') {
+    playVideos();
+  }
 }
 
 function collapser() {
