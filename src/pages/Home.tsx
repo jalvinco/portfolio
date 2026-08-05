@@ -1,14 +1,21 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Skills from "../components/sections/Skills";
+import FeaturedProjects from "../components/sections/FeaturedProjects";
+import PhotographyPreview from "../components/sections/PhotographyPreview";
+import LatestLabPosts from "../components/sections/LatestLabPosts";
+import ContactCTA from "../components/sections/ContactCTA";
 
 function Home() {
   return (
     <>
-      <Navbar />
-      <Hero
-        title="Jay Alvin"
-        subtitle="Cloud Engineer • Automation Builder • React Native Developer • Street Photographer"
-        />
+      <Hero />
+      <About />
+      <Skills />
+      <FeaturedProjects />
+      <PhotographyPreview />
+      <LatestLabPosts />
+      <ContactCTA />
     </>
   );
 }

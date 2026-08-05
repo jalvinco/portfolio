@@ -1,16 +1,30 @@
-import Button from "./components/ui/Button";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from "./layouts/MainLayout";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Photography from "./pages/Photography";
+import Lab from "./pages/Lab";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Jay Alvin</h1>
-
-      <p>
-        Cloud Engineer • Automation Builder • React Native Developer • Street Photographer
-      </p>
-
-      <Button label="Explore My Work" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/photography" element={<Photography />} />
+          <Route path="/lab" element={<Lab />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

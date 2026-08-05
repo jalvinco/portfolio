@@ -1,11 +1,17 @@
+import type { ReactNode } from "react";
+
 type ButtonProps = {
-  label: string;
+  children: ReactNode;
+  onClick?: () => void;
 };
 
-function Button({ label }: ButtonProps) {
+function Button({
+  children,
+  onClick,
+}: ButtonProps) {
   return (
-    <button>
-      {label}
+    <button onClick={onClick}>
+      {children}
     </button>
   );
 }
