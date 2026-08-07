@@ -20,10 +20,6 @@ export const navigation = [
     path: "/about",
   },
   {
-    label: "Resume",
-    path: "/resume",
-  },
-  {
     label: "Contact",
     path: "/contact",
   },
