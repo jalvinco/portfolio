@@ -1,31 +1,45 @@
-import Logo from "./Logo";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
+const links = [
+  { name: "Home", path: "/" },
+  { name: "Projects", path: "/projects" },
+  { name: "Photography", path: "/photography" },
+  { name: "Lab", path: "/lab" },
+  { name: "About", path: "/about" },
+  { name: "Contact", path: "/contact" },
+];
 
 function Navbar() {
   return (
-    <nav className="border-b border-zinc-800">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Logo />
+    <header className="sticky top-0 z-50 border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+        <Link
+          to="/"
+          className="text-xl font-bold tracking-tight"
+        >
+          jayalvin
+          <span className="text-blue-500">.co</span>
+        </Link>
 
-        <div className="flex gap-6 text-sm">
-          <Link to="/" className="hover:text-blue-500 transition">
-            Home
-          </Link>
-          <Link to="/projects" className="hover:text-blue-500 transition">
-            Projects
-          </Link>
-          <Link to="/photography" className="hover:text-blue-500 transition">
-            Photography
-          </Link>
-          <Link to="/lab" className="hover:text-blue-500 transition">
-            Lab
-          </Link>
-          <Link to="/about" className="hover:text-blue-500 transition">
-            About
-          </Link>
-        </div>
+        <nav className="flex items-center gap-6">
+          {links.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `transition-colors ${
+                  isActive
+                    ? "text-blue-500"
+                    : "text-zinc-400 hover:text-white"
+                }`
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
 

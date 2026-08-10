@@ -1,18 +1,22 @@
 export const skills = [
   {
-    title: "Cloud Engineering",
+    title: "Cloud",
     icon: "☁️",
+    items: ["Azure", "Docker", "Cloudflare"],
   },
   {
-    title: "Automation",
+    title: "AI & Automation",
     icon: "🤖",
+    items: ["n8n", "OpenAI"],
   },
   {
-    title: "React Native",
+    title: "Frontend",
+    icon: "💻",
+    items: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Mobile",
     icon: "📱",
+    items: ["React Native"],
   },
-  {
-    title: "Photography",
-    icon: "📷",
-  },
-];
+]; 

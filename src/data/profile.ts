@@ -1,24 +1,24 @@
 export const profile = {
-  name: "Jay Alvin",
-
   greeting: "Hi, I'm",
+    subtitle: ["JaySub", "next"],
+  name: "Jay Alvin",
+    title: "Title",
+  headline: "Cloud Engineer",
 
-  title: "Cloud Engineer",
-
-  subtitle: [
-    "AI Automation Builder",
+  roles: [
+    "Automation Builder",
     "React Native Developer",
     "Street Photographer",
   ],
 
   description:
-    "I build cloud infrastructure, automate workflows with n8n, develop React Native applications, and create AI-powered solutions.",
+    "Building cloud infrastructure, AI-powered automations, mobile applications, and sharing stories through photography.",
 
-  github: "https://github.com/YOUR_GITHUB",
+  github: "https://github.com/YOUR_USERNAME",
 
   linkedin: "",
 
   email: "",
 
-  website: "https://jayalvin.co",
+  resume: "/resume.pdf",
 };
