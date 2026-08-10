@@ -1,4 +1,5 @@
 import type { Photo } from "../../data/gallery";
+import { motion } from "framer-motion";
 
 type PhotoCardProps = {
   photo: Photo;
@@ -7,7 +8,14 @@ type PhotoCardProps = {
 
 function PhotoCard({ photo, onClick }: PhotoCardProps) {
   return (
-    <button
+    <motion.button
+    initial={{ opacity: 0, y: 20 }}
+
+whileInView={{ opacity: 1, y: 0 }}
+
+viewport={{ once: true }}
+
+transition={{ duration: 0.4 }}
       type="button"
       onClick={onClick}
       className="group w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 text-left"
@@ -17,7 +25,7 @@ function PhotoCard({ photo, onClick }: PhotoCardProps) {
           src={photo.image}
           alt={photo.title}
           loading="lazy"
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
         />
 
         <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/20" />
@@ -32,7 +40,7 @@ function PhotoCard({ photo, onClick }: PhotoCardProps) {
           {photo.location}
         </p>
       </div>
-    </button>
+    </motion.button>
   );
 }
 
