@@ -25,6 +25,7 @@ transition={{ duration: 0.4 }}
           src={photo.image}
           alt={photo.title}
           loading="lazy"
+          decoding="async"
           className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
         />
 

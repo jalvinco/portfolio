@@ -1,8 +1,3 @@
-import por1 from "../assets/photos/portrait/1.jpg";
-import land1 from "../assets/photos/landscape/1.jpg";
-import travel1 from "../assets/photos/travel/1.jpg";
-import travel2 from "../assets/photos/travel/2.jpg";
-
 export type Photo = {
   id: number;
   title: string;
@@ -12,35 +7,72 @@ export type Photo = {
 };
 
 export const gallery: Photo[] = [
+  // Portrait
   {
     id: 1,
-    title: "Street Moment",
+    title: "Quiet Expression",
     category: "Portrait",
-    image: por1,
-    location: "Manila",
+    image: "https://photos.jayalvin.co/assets/photos/portrait/1.jpg",
+    location: "Tokyo, Japan",
   },
-
   {
     id: 2,
-    title: "City Crossing",
-    category: "Landscape",
-    image: land1,
-    location: "Makati",
+    title: "Between Moments",
+    category: "Portrait",
+    image: "https://photos.jayalvin.co/assets/photos/portrait/2.jpg",
+    location: "Tokyo, Japan",
   },
-
   {
     id: 3,
-    title: "Urban Life",
-    category: "Street",
-    image: travel1,
-    location: "Manila",
+    title: "A Passing Glance",
+    category: "Portrait",
+    image: "https://photos.jayalvin.co/assets/photos/portrait/3.jpg",
+    location: "Tokyo, Japan",
   },
 
+  // Landscape
   {
     id: 4,
-    title: "Evening Streets",
-    category: "Street",
-    image: travel2,
-    location: "Manila",
+    title: "City Horizon",
+    category: "Landscape",
+    image: "https://photos.jayalvin.co/assets/photos/landscape/1.jpg",
+    location: "Tokyo, Japan",
+  },
+  {
+    id: 5,
+    title: "Concrete and Light",
+    category: "Landscape",
+    image: "https://photos.jayalvin.co/assets/photos/landscape/2.jpg",
+    location: "Tokyo, Japan",
+  },
+  {
+    id: 6,
+    title: "Beyond the Streets",
+    category: "Landscape",
+    image: "https://photos.jayalvin.co/assets/photos/landscape/3.jpg",
+    location: "Tokyo, Japan",
+  },
+
+  // Travel
+  {
+    id: 7,
+    title: "Wandering Tokyo",
+    category: "Travel",
+    image: "https://photos.jayalvin.co/assets/photos/travel/1.jpg",
+    location: "Tokyo, Japan",
+  },
+  {
+    id: 8,
+    title: "Night Passage",
+    category: "Travel",
+    image: "https://photos.jayalvin.co/assets/photos/travel/2.jpg",
+    location: "Tokyo, Japan",
+  },
+  {
+    id: 9,
+    title: "A Day in Motion",
+    category: "Travel",
+    image: "https://photos.jayalvin.co/assets/photos/travel/3.jpg",
+    location: "Tokyo, Japan",
   },
 ];
