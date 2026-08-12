@@ -16,8 +16,8 @@ function Hero() {
   {
     <div className="max-w-3xl">
         <div className="mb-6 inline-flex rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-400">
-  Open to Cloud Engineering Opportunities
-</div>
+          Site is under development. Check back soon for updates!
+        </div>
         <p className="mb-2 text-blue-500 font-medium">{profile.greeting}</p>
 
         <h1 className="mt-4 text-6xl font-black leading-tight md:text-7xl">
@@ -35,8 +35,8 @@ function Hero() {
         </div>
 
         <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
-  {profile.description}
-</p>
+          {profile.description}
+        </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
