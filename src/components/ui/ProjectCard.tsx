@@ -45,10 +45,10 @@ function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="mt-8">
         <a
-          href={project.github}
+          href={project.liveDemo || project.github || "#"}
           className="inline-flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-blue-400"
         >
-          View Project
+          {project.liveDemo ? "View Demo" : "View Project"}
           <ArrowUpRight
             size={16}
             className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"

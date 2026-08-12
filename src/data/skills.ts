@@ -1,22 +1,51 @@
 export const skills = [
   {
-    title: "Cloud",
+    title: "Cloud & DevOps",
     icon: "☁️",
-    items: ["Azure", "Docker", "Cloudflare"],
+    items: [
+      "Azure",
+      "Docker",
+      "Cloudflare Workers",
+      "Git",
+      "CI/CD workflows",
+      "Environment configuration",
+    ],
   },
   {
     title: "AI & Automation",
     icon: "🤖",
-    items: ["n8n", "OpenAI"],
+    items: [
+      "Lyzr",
+      "n8n",
+      "OpenAI",
+      "AI agents",
+      "Prompt orchestration",
+      "Workflow automation",
+    ],
   },
   {
     title: "Frontend",
     icon: "💻",
-    items: ["React", "TypeScript", "Tailwind CSS"],
+    items: [
+      "React",
+      "TypeScript",
+      "Angular",
+      "Vite",
+      "Tailwind CSS",
+      "Responsive UI",
+      "Accessibility",
+    ],
   },
   {
-    title: "Mobile",
+    title: "Mobile & Data",
     icon: "📱",
-    items: ["React Native"],
+    items: [
+      "React Native",
+      "Expo",
+      "REST APIs",
+      "SQLite",
+      "Google Sheets",
+      "CSV / PDF export",
+    ],
   },
-]; 
+];
