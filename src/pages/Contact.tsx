@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://api.jayalvin.co/";
+const API_URL = "https://api.jayalvin.co";
 const SESSION_STORAGE_KEY = "jayalvin-ai-session";
 
 function Contact() {
