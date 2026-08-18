@@ -2,7 +2,7 @@ import cvFile from "../assets/Jay-Alvin-CV.pdf";
 
 const experience = [
   {
-    role: "Software Engineer II",
+    role: "Software Engineer",
     period: "July 2017 – Present",
     company: "RealPage Philippines, Inc.",
     bullets: [
