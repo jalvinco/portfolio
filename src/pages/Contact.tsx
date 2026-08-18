@@ -175,7 +175,10 @@ function Contact() {
             </a>
           </p>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-zinc-400">
-            Wanna ask something? You may also click quick questions below. "I" will answer! 
+            Wanna ask something? You may also click quick questions below. "I" will answer!
+          </p>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-zinc-500">
+            Note: LLM Model may sometimes be unavailable due to a free model being used, I will tell my agent ASAP to fix this!
           </p>
         </div>
 
