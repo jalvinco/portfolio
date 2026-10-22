@@ -45,15 +45,24 @@ const skills = [
   "Data grids and exports",
   "Form validation and accessibility",
   "Code review and UI architecture review",
-  "N8N, AI tools, Claude",
+  "MS Power BI",
+  "Power Query",
+  "Copilot",
+  "Gemini",
+  "Claude Code",
+  "React Native",
+  "PostgreSQL",
+  "Python",
+  "Fast Learner",
+  "Flexible",
 ];
 
 function About() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-20">
+    <main className="mx-auto my-8 max-w-6xl rounded-3xl border border-orange-900/50 bg-gradient-to-br from-orange-950/70 via-[#1c120d] to-[#0c0806] px-6 py-20">
       <header className="mb-12 flex flex-col gap-6 border-b border-zinc-800 pb-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-blue-500">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-400">
             About me
           </p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -64,7 +73,7 @@ function About() {
         <a
           href={cvFile}
           download
-          className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-500"
+          className="inline-flex items-center justify-center rounded-xl bg-orange-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-orange-500"
         >
           Download CV
         </a>
@@ -85,7 +94,7 @@ function About() {
                 <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
                   <div>
                     <h3 className="text-xl font-semibold text-white">{item.role}</h3>
-                    <p className="mt-1 text-sm text-blue-400">{item.company}</p>
+                    <p className="mt-1 text-sm text-orange-300">{item.company}</p>
                   </div>
                   <p className="text-sm text-zinc-400">{item.period}</p>
                 </div>
@@ -93,7 +102,7 @@ function About() {
                 <ul className="space-y-3 text-zinc-300">
                   {item.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-500" aria-hidden="true" />
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-orange-500" aria-hidden="true" />
                       <span>{bullet}</span>
                     </li>
                   ))}

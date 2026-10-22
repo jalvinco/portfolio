@@ -153,23 +153,23 @@ function Contact() {
   };
 
   return (
-    <main className="mx-auto flex min-h-[calc(10vh-4rem)] max-w-7xl items-center justify-center px-6 py-20">
+    <main className="mx-auto my-8 flex min-h-[calc(10vh-4rem)] max-w-7xl items-center justify-center rounded-3xl border border-orange-900/50 bg-gradient-to-br from-orange-950/70 via-[#1c120d] to-[#0c0806] px-6 py-20">
       <section className="w-full max-w-2xl">
 
         <div className="mb-10 text-center">
           <h2 className="text-xl font-bold tracking-tight sm:text-3xl">
             Hello! I'm Jay Alvin{" "}
-            <span className="text-blue-500">
+            <span className="text-orange-400">
               Co
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-zinc-400">
-            <a href="tel:+2349055741020" className="inline-flex items-center gap-1 text-zinc-400 transition hover:text-blue-400">
+            <a href="tel:+2349055741020" className="inline-flex items-center gap-1 text-zinc-400 transition hover:text-orange-300">
               <span aria-hidden="true">📱</span>
               <span>09055741020</span>
             </a>
             <span className="mx-2"> </span>
-            <a href="mailto:jalbinco@gmail.com" className="inline-flex items-center gap-1 text-zinc-400 transition hover:text-blue-400">
+            <a href="mailto:jalbinco@gmail.com" className="inline-flex items-center gap-1 text-zinc-400 transition hover:text-orange-300">
               <span aria-hidden="true">📧</span>
               <span>jalbinco@gmail.com</span>
             </a>
@@ -206,7 +206,7 @@ function Contact() {
 
                   void submitQuestion(prompt);
                 }}
-                className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                className="cursor-pointer rounded-full bg-orange-600 px-4 py-2 font-bold text-white transition hover:bg-orange-500"
               >
                 {prompt}
               </button>
@@ -223,7 +223,7 @@ function Contact() {
             placeholder="Type your question here..."
             rows={2}
             disabled={isLoading}
-            className="h-28 w-full resize-none rounded-2xl border border-zinc-800 bg-zinc-900/70 px-5 py-4 text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-60"
+            className="h-28 w-full resize-none rounded-2xl border border-orange-950 bg-zinc-900/70 px-5 py-4 text-white outline-none transition placeholder:text-zinc-600 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 disabled:cursor-not-allowed disabled:opacity-60"
           />
 
           <div className="mt-4 flex justify-end">
@@ -233,7 +233,7 @@ function Contact() {
                 !message.trim() ||
                 isLoading
               }
-              className="cursor-pointer rounded-xl bg-blue-500 px-6 py-3 font-medium text-white transition hover:bg-blue-400 disabled:cursor-not-allowed disabled:opacity-40"
+              className="cursor-pointer rounded-xl bg-orange-600 px-6 py-3 font-medium text-white transition hover:bg-orange-500 disabled:cursor-not-allowed disabled:opacity-40"
             >
               {isLoading
                 ? "Thinking..."
@@ -250,18 +250,18 @@ function Contact() {
                 You
               </p>
 
-              <div className="rounded-2xl border border-zinc-800 bg-blue-500 px-5 py-4 text-zinc-200">
+              <div className="rounded-2xl border border-orange-800 bg-orange-950/60 px-5 py-4 text-orange-100">
                 {question}
               </div>
             </div>
 
             {isLoading && (
               <div className="pr-5">
-                <p className="mb-2 text-sm font-medium text-blue-400">
+                <p className="mb-2 text-sm font-medium text-orange-300">
                   AI Me
                 </p>
 
-                <div className="rounded-2xl border border-zinc-800 bg-gray-200 px-5 py-4 text-black">
+                <div className="rounded-2xl border border-orange-900 bg-zinc-900 px-5 py-4 text-zinc-200">
                   Thinking...
                 </div>
               </div>
@@ -283,7 +283,7 @@ function Contact() {
               !isLoading &&
               !error && (
                 <div className="pr-3">
-                  <p className="mb-2 text-sm font-medium text-blue-400">
+                  <p className="mb-2 text-sm font-medium text-orange-300">
                     AI Me
                   </p>
 

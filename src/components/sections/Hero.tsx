@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     
-    <Section className="min-h-[calc(100vh-80px)] flex items-center">
+    <Section className="my-8 flex min-h-[calc(100vh-112px)] items-center overflow-hidden rounded-3xl border border-orange-900/50 bg-gradient-to-br from-orange-950/70 via-[#1c120d] to-[#0c0806]">
 
         <motion.div
   initial={{ opacity: 0, y: 30 }}
@@ -15,10 +15,10 @@ function Hero() {
 >
   {
     <div className="max-w-3xl">
-        <div className="mb-6 inline-flex rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-400">
+        <div className="mb-6 inline-flex rounded-full border border-orange-500/20 bg-orange-500/10 px-4 py-2 text-sm text-orange-300">
           Site is under development. Check back soon for updates!
         </div>
-        <p className="mb-2 text-blue-500 font-medium">{profile.greeting}</p>
+        <p className="mb-2 font-medium text-orange-400">{profile.greeting}</p>
 
         <h1 className="mt-4 text-6xl font-black leading-tight md:text-7xl">
         {profile.name}
@@ -41,7 +41,7 @@ function Hero() {
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
             to="/projects"
-            className="rounded-xl bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-500"
+            className="rounded-xl bg-orange-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-orange-500"
           >
             View Projects
           </Link>

@@ -1,17 +1,17 @@
 export const colors = {
-  background: "#09090B",
+  background: "#0c0806",
 
-  surface: "#18181B",
+  surface: "#1c120d",
 
-  surfaceHover: "#27272A",
+  surfaceHover: "#2b1a11",
 
-  text: "#FAFAFA",
+  text: "#f7eee8",
 
-  muted: "#A1A1AA",
+  muted: "#b6a79e",
 
-  border: "#27272A",
+  border: "#3b281d",
 
-  accent: "#2563EB",
+  accent: "#f97316",
 
   success: "#22C55E",
 

@@ -10,9 +10,9 @@ function Technologies() {
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="rounded-3xl border border-zinc-800 bg-zinc-950/50 p-6"
+              className="rounded-3xl border border-orange-950/80 bg-[#21150f] p-6 transition-colors hover:border-orange-800/70"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
                 {skill.icon} {skill.title}
               </p>
 

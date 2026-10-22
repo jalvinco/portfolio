@@ -6,6 +6,11 @@ export type Project = {
   technologies: string[];
   category: string;
   status: "In Progress" | "Completed" | "Experiment";
+  highlights?: string[];
+  screenshots?: {
+    title: string;
+    detail: string;
+  }[];
   featured?: boolean;
   github?: string;
   liveDemo?: string;
@@ -84,6 +89,45 @@ export const featuredProject: FeaturedProject = {
 
 export const projects: Project[] = [
   {
+    id: "setsales",
+
+    title: "SetSales",
+
+    tagline:
+      "A simple mobile point-of-sale system for managing sales, products, and staff.",
+
+    description:
+      "SetSales is a React Native POS app backed by Supabase. It brings checkout, sales tracking, product management, and staff access into one straightforward mobile workflow.",
+
+    technologies: [
+      "React Native",
+      "Supabase",
+      "PostgreSQL",
+      "Mobile POS",
+    ],
+
+    category: "Mobile / Point of Sale",
+
+    status: "In Progress",
+
+    featured: true,
+
+    highlights: [
+      "Record and track sales from a mobile device",
+      "Manage products and inventory",
+      "Staff login and user management",
+      "Supabase-backed data storage",
+    ],
+
+    screenshots: [
+      { title: "Checkout", detail: "New sale" },
+      { title: "Sales overview", detail: "Today's sales" },
+      { title: "Products", detail: "Product management" },
+      { title: "Staff", detail: "People and access" },
+    ],
+  },
+
+  {
     id: "lyzr-ai-contact-agent",
 
     title: "Lyzr AI Contact Agent",
@@ -128,7 +172,7 @@ export const projects: Project[] = [
       "React Native",
       "TypeScript",
       "n8n",
-      "OpenAI",
+      "AI",
       "SQLite",
       "Google Sheets",
     ],

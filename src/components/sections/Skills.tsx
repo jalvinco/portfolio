@@ -12,7 +12,7 @@ function Skills() {
               key={skill.title}
               className="rounded-3xl border border-zinc-800 bg-zinc-950/50 p-6"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
                 {skill.icon} {skill.title}
               </p>
 

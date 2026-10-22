@@ -1,15 +1,15 @@
 export const theme = {
   colors: {
-    background: "#09090B",
-    surface: "#18181B",
-    card: "#27272A",
-    border: "#3F3F46",
+    background: "#0c0806",
+    surface: "#1c120d",
+    card: "#2b1a11",
+    border: "#3b281d",
 
-    text: "#FAFAFA",
-    muted: "#A1A1AA",
+    text: "#f7eee8",
+    muted: "#b6a79e",
 
-    primary: "#3B82F6",
-    secondary: "#8B5CF6",
+    primary: "#f97316",
+    secondary: "#fb923c",
   },
 
   radius: {

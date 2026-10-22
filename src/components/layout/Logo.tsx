@@ -8,7 +8,7 @@ function Logo() {
       }}
     >
       <h1 className="text-xl font-bold">
-        jayalvin<span className="text-sky-500">.co</span>
+        jayalvin<span className="text-orange-500">.co</span>
       </h1>
     </a>
   );

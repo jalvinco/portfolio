@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 
 function Projects() {
   return (
-    <Section>
+    <Section className="my-8 rounded-3xl border border-orange-900/50 bg-gradient-to-br from-orange-950/70 via-[#1c120d] to-[#0c0806]">
       <SectionTitle
         eyebrow="Projects"
         title="Things I've built."

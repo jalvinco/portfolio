@@ -11,7 +11,7 @@ function SectionTitle({
 }: Props) {
   return (
     <div className="mb-12">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
         {eyebrow}
       </p>
 

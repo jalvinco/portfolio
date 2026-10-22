@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" },
   { name: "Photography", path: "/photography" },
   // { name: "Lab", path: "/lab" },
-  { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
 ];
 
 function Navbar() {
@@ -21,10 +21,12 @@ function Navbar() {
         <Link
           to="/"
           onClick={() => setIsOpen(false)}
-          className="text-xl font-bold tracking-tight"
+          className="flex items-center gap-2 text-xl font-bold tracking-tight"
         >
-          jayalvin
-          <span className="text-blue-500">.co</span>
+          <img src="/favicon.svg" alt="" className="h-7 w-7" />
+          <span>
+            jayalvin<span className="text-orange-500">.co</span>
+          </span>
         </Link>
 
         {/* Desktop navigation */}
@@ -36,7 +38,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `transition-colors ${
                   isActive
-                    ? "text-blue-500"
+                    ? "text-orange-400"
                     : "text-zinc-400 hover:text-white"
                 }`
               }
@@ -70,7 +72,7 @@ function Navbar() {
                 className={({ isActive }) =>
                   `text-lg transition-colors ${
                     isActive
-                      ? "text-blue-500"
+                      ? "text-orange-400"
                       : "text-zinc-400 hover:text-white"
                   }`
                 }

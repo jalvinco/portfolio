@@ -1,10 +1,13 @@
 @import "tailwindcss";
 :root {
-  --background: #09090B;
-  --surface: #18181B;
-  --text: #FAFAFA;
-  --muted: #A1A1AA;
-  --accent: #3B82F6;
+  color-scheme: dark;
+  --background: #0c0806;
+  --surface: #1c120d;
+  --text: #f7eee8;
+  --muted: #b6a79e;
+  --accent: #f97316;
+  --accent-hover: #fb923c;
+  --border: #3b281d;
 }
 
 body {
@@ -12,6 +15,16 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: "Inter", sans-serif;
+  min-width: 320px;
+}
+
+::selection {
+  color: #1c120d;
+  background: var(--accent);
+}
+
+a {
+  color: inherit;
 }
 
 h1,

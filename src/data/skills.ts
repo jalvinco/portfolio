@@ -1,23 +1,24 @@
 export const skills = [
   {
-    title: "Cloud & DevOps",
-    icon: "☁️",
+    title: "Data & Analytics",
+    icon: "📊",
     items: [
-      "Azure",
-      "Docker",
-      "Cloudflare Workers",
-      "Git",
-      "CI/CD workflows",
-      "Environment configuration",
+      "MS Power BI",
+      "Power Query",
+      "PostgreSQL",
+      "Python",
+      "SQL",
     ],
   },
   {
     title: "AI & Automation",
-    icon: "🤖",
+    icon: "✨",
     items: [
       "Lyzr",
       "n8n",
-      "OpenAI",
+      "Copilot",
+      "Gemini",
+      "Claude Code",
       "AI agents",
       "Prompt orchestration",
       "Workflow automation",
@@ -37,7 +38,7 @@ export const skills = [
     ],
   },
   {
-    title: "Mobile & Data",
+    title: "Mobile & App Development",
     icon: "📱",
     items: [
       "React Native",
@@ -46,6 +47,26 @@ export const skills = [
       "SQLite",
       "Google Sheets",
       "CSV / PDF export",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "☁️",
+    items: [
+      "Azure",
+      "Docker",
+      "Cloudflare Workers",
+      "Git",
+      "CI/CD workflows",
+      "Environment configuration",
+    ],
+  },
+  {
+    title: "Professional Strengths",
+    icon: "🌱",
+    items: [
+      "Fast Learner",
+      "Flexible",
     ],
   },
 ];

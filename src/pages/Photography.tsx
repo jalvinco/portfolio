@@ -45,8 +45,8 @@ function Photography() {
               onClick={() => setActiveCategory(category)}
               className={`rounded-full px-4 py-2 text-sm transition ${
                 active
-                  ? "bg-white text-black"
-                  : "border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white"
+                  ? "bg-orange-500 text-zinc-950"
+                  : "border border-orange-950 text-zinc-400 hover:border-orange-700 hover:text-orange-100"
               }`}
             >
               {category}
