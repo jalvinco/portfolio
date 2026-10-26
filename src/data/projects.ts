@@ -1,8 +1,3 @@
-import setsales1 from "../assets/images/setsales1.jpg";
-import setsales2 from "../assets/images/setsales2.jpg";
-import setsales3 from "../assets/images/setsales3.jpg";
-import setsales4 from "../assets/images/setsales4.jpg";
-
 export type Project = {
   id: string;
   title: string;
@@ -126,10 +121,26 @@ export const projects: Project[] = [
     ],
 
     screenshots: [
-      { title: "People directory", detail: "Staff and access", image: setsales1 },
-      { title: "Register / transact", detail: "Product checkout", image: setsales2 },
-      { title: "Transaction history", detail: "Order records", image: setsales3 },
-      { title: "Sales overview", detail: "Store dashboard", image: setsales4 },
+      {
+        title: "People directory",
+        detail: "Staff and access",
+        image: "https://photos.jayalvin.co/assets/photos/setsales/setsales1.jpg",
+      },
+      {
+        title: "Register / transact",
+        detail: "Product checkout",
+        image: "https://photos.jayalvin.co/assets/photos/setsales/setsales2.jpg",
+      },
+      {
+        title: "Transaction history",
+        detail: "Order records",
+        image: "https://photos.jayalvin.co/assets/photos/setsales/setsales3.jpg",
+      },
+      {
+        title: "Sales overview",
+        detail: "Store dashboard",
+        image: "https://photos.jayalvin.co/assets/photos/setsales/setsales4.jpg",
+      },
     ],
   },
 
