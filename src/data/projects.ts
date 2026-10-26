@@ -1,3 +1,8 @@
+import setsales1 from "../assets/images/setsales1.jpg";
+import setsales2 from "../assets/images/setsales2.jpg";
+import setsales3 from "../assets/images/setsales3.jpg";
+import setsales4 from "../assets/images/setsales4.jpg";
+
 export type Project = {
   id: string;
   title: string;
@@ -10,6 +15,7 @@ export type Project = {
   screenshots?: {
     title: string;
     detail: string;
+    image: string;
   }[];
   featured?: boolean;
   github?: string;
@@ -120,10 +126,10 @@ export const projects: Project[] = [
     ],
 
     screenshots: [
-      { title: "Checkout", detail: "New sale" },
-      { title: "Sales overview", detail: "Today's sales" },
-      { title: "Products", detail: "Product management" },
-      { title: "Staff", detail: "People and access" },
+      { title: "People directory", detail: "Staff and access", image: setsales1 },
+      { title: "Register / transact", detail: "Product checkout", image: setsales2 },
+      { title: "Transaction history", detail: "Order records", image: setsales3 },
+      { title: "Sales overview", detail: "Store dashboard", image: setsales4 },
     ],
   },
 

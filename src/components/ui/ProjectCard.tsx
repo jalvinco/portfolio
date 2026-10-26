@@ -43,32 +43,14 @@ function ProjectCard({ project }: ProjectCardProps) {
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {project.screenshots.map((screenshot) => (
             <div key={screenshot.title} className="min-w-0">
-              <div className="aspect-[9/16] overflow-hidden rounded-xl border border-orange-950 bg-[#120c08] p-2">
-                <div className="flex h-full flex-col rounded-lg border border-orange-950/70 bg-zinc-950 p-2">
-                  <div className="flex items-center justify-between text-[8px] text-zinc-500">
-                    <span>9:41</span>
-                    <span>•••</span>
-                  </div>
-                  <p className="mt-3 text-[9px] font-semibold text-orange-400">
-                    SetSales
-                  </p>
-                  <p className="mt-3 text-[10px] font-medium leading-tight text-zinc-100">
-                    {screenshot.title}
-                  </p>
-                  <p className="mt-1 text-[8px] text-zinc-500">
-                    {screenshot.detail}
-                  </p>
-                  <div className="mt-3 rounded-md bg-orange-950/50 p-2">
-                    <div className="h-1 w-1/2 rounded bg-zinc-700" />
-                    <div className="mt-2 h-2 w-3/4 rounded bg-orange-500/70" />
-                  </div>
-                  <div className="mt-2 space-y-1.5">
-                    <div className="h-5 rounded border border-zinc-800 bg-zinc-900" />
-                    <div className="h-5 rounded border border-zinc-800 bg-zinc-900" />
-                    <div className="h-5 rounded border border-zinc-800 bg-zinc-900" />
-                  </div>
-                  <div className="mt-auto h-1 rounded-full bg-orange-900/60" />
-                </div>
+              <div className="aspect-[9/16] overflow-hidden rounded-xl border border-orange-950 bg-white">
+                <img
+                  src={screenshot.image}
+                  alt={`${project.title} ${screenshot.title}`}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <p className="mt-2 truncate text-center text-[11px] text-zinc-500">
                 {screenshot.title}
