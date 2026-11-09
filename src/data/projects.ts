@@ -109,7 +109,7 @@ export const projects: Project[] = [
 
     category: "Mobile / Point of Sale",
 
-    status: "In Progress",
+    status: "Completed",
 
     featured: true,
 
@@ -140,6 +140,58 @@ export const projects: Project[] = [
         title: "Sales overview",
         detail: "Store dashboard",
         image: "https://photos.jayalvin.co/assets/photos/setsales/setsales4.jpg",
+      },
+    ],
+  },
+
+  {
+    id: "expense-tracker",
+
+    title: "Expense Tracker",
+
+    tagline:
+      "A straightforward offline expense tracker for monthly expenses and shared balances.",
+
+    description:
+      "Track monthly expenses, record amounts you owe or are owed, and review transactions with date filters. Expense data remains available offline.",
+
+    technologies: [
+      "Offline-first",
+      "Expense Tracking",
+      "Date Filters",
+    ],
+
+    category: "Personal Finance / Mobile",
+
+    status: "Completed",
+
+    highlights: [
+      "Add and manage monthly expenses",
+      "Track amounts owed and amounts owed to you",
+      "Filter expense records by date",
+      "Use the tracker offline",
+    ],
+
+    screenshots: [
+      {
+        title: "Monthly expenses",
+        detail: "Expense overview",
+        image: "https://photos.jayalvin.co/assets/photos/expense/expense1.jpg",
+      },
+      {
+        title: "Expense details",
+        detail: "Add and review expenses",
+        image: "https://photos.jayalvin.co/assets/photos/expense/expense2.jpg",
+      },
+      {
+        title: "Balances",
+        detail: "Amounts owed",
+        image: "https://photos.jayalvin.co/assets/photos/expense/expense3.jpg",
+      },
+      {
+        title: "Date filters",
+        detail: "Filter expense records",
+        image: "https://photos.jayalvin.co/assets/photos/expense/expense4.jpg",
       },
     ],
   },
