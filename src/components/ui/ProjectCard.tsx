@@ -6,6 +6,7 @@ type ProjectCardProps = {
 };
 
 function ProjectCard({ project }: ProjectCardProps) {
+  const isExternalDemo = project.liveDemo?.startsWith("https://");
   const projectUrl =
     project.liveDemo && project.liveDemo !== "#"
       ? project.liveDemo
@@ -31,6 +32,18 @@ function ProjectCard({ project }: ProjectCardProps) {
         </span>
       </div>
 
+      {isExternalDemo && projectUrl && (
+        <a
+          href={projectUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 inline-flex items-center gap-2 rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-orange-400"
+        >
+          Visit Website
+          <ArrowUpRight size={16} />
+        </a>
+      )}
+
       <p className="mt-4 text-zinc-400">
         {project.tagline}
       </p>
@@ -40,10 +53,10 @@ function ProjectCard({ project }: ProjectCardProps) {
       </p>
 
       {project.screenshots && (
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className={`mt-6 grid grid-cols-2 gap-3 ${project.screenshotLayout === "square" ? "" : "sm:grid-cols-4"}`}>
           {project.screenshots.map((screenshot) => (
             <div key={screenshot.title} className="min-w-0">
-              <div className="aspect-[9/16] overflow-hidden rounded-xl border border-orange-950 bg-white">
+              <div className={`${project.screenshotLayout === "square" ? "aspect-square" : "aspect-[9/16]"} overflow-hidden rounded-xl border border-orange-950 bg-white`}>
                 <img
                   src={screenshot.image}
                   alt={`${project.title} ${screenshot.title}`}
@@ -86,9 +99,13 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className="mt-8">
         <a
           href={projectUrl}
+          target={isExternalDemo ? "_blank" : undefined}
+          rel={isExternalDemo ? "noreferrer" : undefined}
           className="inline-flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-orange-300"
         >
-          {project.liveDemo && project.liveDemo !== "#"
+          {isExternalDemo
+            ? "Visit Website"
+            : project.liveDemo && project.liveDemo !== "#"
             ? "View Demo"
             : "View Project"}
           <ArrowUpRight

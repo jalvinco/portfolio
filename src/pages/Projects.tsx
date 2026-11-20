@@ -9,7 +9,7 @@ function Projects() {
       <SectionTitle
         eyebrow="Projects"
         title="Things I've built."
-        description="A collection of applications, automations, experiments, and technical projects."
+        description="A collection of personal projects and experiments. Corporate projects from my professional experience are limited here because they are private or intended for internal use. Contact me to learn more about my work experience and capabilities."
       />
 
       <div className="grid gap-6 md:grid-cols-2">

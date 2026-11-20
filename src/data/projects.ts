@@ -7,6 +7,7 @@ export type Project = {
   category: string;
   status: "In Progress" | "Completed" | "Experiment";
   highlights?: string[];
+  screenshotLayout?: "square";
   screenshots?: {
     title: string;
     detail: string;
@@ -140,6 +141,58 @@ export const projects: Project[] = [
         title: "Sales overview",
         detail: "Store dashboard",
         image: "https://photos.jayalvin.co/assets/photos/setsales/setsales4.jpg",
+      },
+    ],
+  },
+
+  {
+    id: "doomsday-tva-case",
+
+    title: "Doomsday TVA Case",
+
+    tagline:
+      "TVA case files investigating the events that lead to an incursion.",
+
+    description:
+      "TVA case files to review events happening that caused an incursion that eventually leads to the most awaited movie of the year, Avengers Doomsday . Developed with react, react flow, used the free api agostomcu api, with chatango chatbox",
+
+    technologies: [
+      "React",
+      "React Flow",
+      "Agostomcu API",
+      "Chatango",
+    ],
+
+    category: "Web / React",
+
+    status: "Completed",
+
+    featured: true,
+
+    screenshotLayout: "square",
+
+    liveDemo: "https://www.doomsdaycountdown.space/",
+
+    screenshots: [
+      {
+        title: "TVA case file 1",
+        detail: "Case file overview",
+        image: "https://photos.jayalvin.co/assets/photos/mcu/mcu1.jpg",
+      },
+      {
+        title: "TVA case file 2",
+        detail: "Incursion investigation",
+        image: "https://photos.jayalvin.co/assets/photos/mcu/mcu2.jpg",
+      },
+      {
+        title: "TVA case file 3",
+        detail: "Timeline analysis",
+        image: "https://photos.jayalvin.co/assets/photos/mcu/mcu3.jpg",
+      },
+      {
+        title: "TVA case file 4",
+        detail: "Case review",
+        image: "https://photos.jayalvin.co/assets/photos/mcu/mcu4.jpg",
       },
     ],
   },

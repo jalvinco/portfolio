@@ -4,11 +4,11 @@ import ProjectCard from "../ui/ProjectCard";
 import { projects } from "../../data/projects";
 
 function FeaturedProject() {
-  const project = projects.find(
-    (project) => project.id === "setsales"
+  const featuredProjects = projects.filter(
+    (project) => project.id === "setsales" || project.id === "doomsday-tva-case"
   );
 
-  if (!project) {
+  if (featuredProjects.length === 0) {
     return null;
   }
 
@@ -16,10 +16,14 @@ function FeaturedProject() {
     <Section>
       <div className="mb-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">
-          Featured Project
+          Featured Projects
         </p>
       </div>
-      <ProjectCard project={project} />
+      <div className="grid gap-6 md:grid-cols-2">
+        {featuredProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
     </Section>
   );
 }
